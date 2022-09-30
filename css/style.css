@@ -1,0 +1,314 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES*/
+/* colors & font type*/
+:root{
+    --primary-color: #e8491d;
+    --secondary-color: #7c3d02;
+    --primary-font:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* OVERAL DISPLAY */
+html, body{
+    font-family: var(--primary-font);
+    line-height: 1.7em;
+}
+
+/* ELEMENTS */
+/* anchor links */
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* large heading */
+.l-heading{
+    font-size: 50px;
+    line-height: 2.5rem;
+}
+
+/* paragraphs */
+p{
+    margin: 10px 0px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+/* LAYOUT STRUCTURE */
+/* container */
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/* padding y-axis */
+.py-1{padding: 10px 0;}
+.py-2{padding: 20px 0;}
+.py-3{padding: 30px 0;}
+
+
+/* TEXT */
+.text-primary{
+    color: var(--primary-color);
+}
+
+
+/* BUTTONS */
+/* basic button */
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff ;
+    background: var(--primary-color) ;
+    padding: .5rem 1rem;
+    border: none;
+    cursor: pointer;
+    /* border-radius: ; */
+}
+
+.btn:hover{
+    background: var(--secondary-color);
+    color: #fff ;
+}
+
+/* styled button
+button should use the above .btn class also alongside to format the padding, border etc
+*/
+.btn-dark{
+    background: var(--secondary-color);
+}
+
+.btn-dark:hover{
+    background: var(--primary-color);
+}
+
+
+/* BACKGROUND COLORS */
+.bg-dark{
+    background: #35424a;
+    color: #fff;
+}
+
+.bg-light{
+    background: #f4f4f4;
+    color: #000;
+}
+
+.bg-primary{
+    background: var(--primary-color) ;
+    color: #fff ;
+}
+
+
+/* MAIN PAGE */
+/* NAVBAR */
+#navbar{
+    border-bottom: .3rem solid var(--primary-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#navbar .container{
+    height: 10vh;
+    overflow: hidden;
+}
+
+#navbar .container .nav-content{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#navbar .container .nav-content .nav-logo a{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#navbar .container .nav-content .nav-menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#navbar .container .nav-content .nav-menu ul li a{
+    padding: 1rem 1.5rem;
+}
+
+#navbar .container .nav-content .nav-menu ul li a:hover{
+    background: #fff;
+    color: var(--primary-color);
+}
+
+/* showcase */
+#showcase{
+    background: #012d35c5;
+    position: relative;
+    height: 80vh;
+}
+
+#showcase::before{
+    content: '';
+    position: absolute;
+    background: url('../img/showcase.jpg') no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#showcase .showcase-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+#showcase .showcase-container p{
+    font-size: 1.2rem;
+    padding: 0 12rem;
+}
+
+/* subscription */
+#sub .sub-container{
+    display: flex;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sub .sub-container p{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#sub .sub-container form{
+    display: flex;
+}
+
+#sub .sub-container form input{
+    padding: .8rem 1rem;
+    width: 30rem;
+    margin: 0 1rem;
+}
+
+#sub .sub-container form input:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+/* service */
+#service .service-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+#service .service-container .box{
+    flex: 1;
+    margin: 1rem;
+}
+
+#service .service-container img{
+    width: 100px;
+}
+
+/* ABOUT PAGE */
+#about .about-section{
+    display: flex;
+}
+
+#about .about-section div{
+    margin: 1rem 2rem;
+    padding: 1.5rem;
+}
+
+#about .about-section div .bg-dark{
+    padding: 1rem;
+}
+
+/* SERVICE PAGE */
+#section{
+    display: flex;
+    margin: 0rem 2rem;
+}
+
+#section .services{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 0rem 10rem;
+}
+
+#section .services .service{
+    background: #d9dadb;
+    margin: .5rem 0rem;
+    padding: 2.5rem 1.3rem;
+}
+
+#section .quote{
+    flex: 2;
+    padding-top: 2.5rem;
+}
+
+#section .quote .form-box{
+    padding: 2rem 1rem;
+}
+
+#section .quote .form-box h2{
+    padding: .5rem 0rem;
+}
+
+#section .quote .form-box form input{
+    padding: .5rem;
+}
+
+#section .quote .form-box form .form-section{
+    padding-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#section .quote .form-box form input:focus,
+#section .quote .form-box form textarea:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+}
+
+#section .quote .form-box form textarea{
+    width: 100%;
+    padding: .5rem .5rem 4rem .5rem;
+}
+
+#section .quote .form-box form button{
+    font-size: 1rem;
+}
+
+/* footer */
+#foot .container{
+    text-align: center;
+}

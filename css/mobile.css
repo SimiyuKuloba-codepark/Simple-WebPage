@@ -1,0 +1,65 @@
+/* large heading */
+.l-heading{
+    font-size: 2rem !important;
+}
+
+/* navbar */
+#navbar .container{
+    height: 15vh !important;
+}
+
+#navbar .container .nav-content{
+flex-direction: column;
+justify-content: space-around !important;
+
+}
+
+#navbar .container .nav-content .nav-menu ul li a{
+    padding: .7rem !important;
+}
+
+/* showcase */
+#showcase{
+    height: 50vh !important;
+}
+
+#showcase .showcase-container p{
+font-size: 1rem !important;
+    padding: 0 5rem !important;
+}
+
+/* subscription */
+#sub .sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    height: 20vh !important;
+}
+
+#sub .sub-container p{
+    font-size: 1.2rem !important;
+}
+
+#sub .sub-container form input{
+    width: 15rem !important;
+    margin: 0 1rem;
+}
+
+/* service */
+#service .service-container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ABOUT */
+#about .about-section{
+    flex-direction: column;
+}
+
+#about .about-section div:nth-child(2){
+    padding: 1rem !important;
+}
+
+#about .about-section div:nth-child(2){
+    margin: .5rem !important;
+}
